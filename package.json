@@ -1,0 +1,12 @@
+{
+  "name": "js-mcq-quiz",
+  "version": "1.0.0",
+  "description": "JavaScript Multiple-Choice Quiz Autograding",
+  "type": "module",
+  "main": "grade.js",
+  "scripts": {
+    "test": "node grade.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
