@@ -1,0 +1,21 @@
+name: JavaScript MCQ Autograder
+
+on: [push, pull_request]
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install || echo "No dependencies needed"
+
+      - name: Run Grading Script
+        run: node grade.js
